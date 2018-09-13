@@ -2,10 +2,19 @@
 
 export OLD=$1
 export NEW=$2
+export EXCLUDE=$3
+
 function md5check(){
 	local old=$1
 	local new=$2
 	for file in `ls $old`; do
+	  if [[ -n $EXCLUDE ]];then
+			if [[ $file == *$EXCLUDE ]]; then
+				continue
+			fi
+		fi
+
+
 		if [ -f "$old/$file" ]; then
 			local old_md5=$(md5 -q $old/$file)
 			local new_md5=$(md5 -q $new/$file)
