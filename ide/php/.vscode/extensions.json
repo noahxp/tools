@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "ikappas.phpcs",
+    "bmewburn.vscode-intelephense-client",
+    "felixfbecker.php-debug",
+    "junstyle.php-cs-fixer",
+    "stef-k.laravel-goto-controller",
+    "onecentlin.laravel5-snippets",
+    "codingyu.laravel-goto-view",
+    "amiralizadeh9480.laravel-extra-intellisense",
+    "onecentlin.laravel-blade",
+    "ryannaddy.laravel-artisan",
+  ]
+}

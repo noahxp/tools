@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "octref.vetur",
+    "syler.sass-indented",
+    "kisstkondoros.vscode-codemetrics",
+    "dbaeumer.vscode-eslint",
+  ]
+}

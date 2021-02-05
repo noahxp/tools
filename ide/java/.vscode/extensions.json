@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "vscjava.vscode-java-debug",
+    "naco-siren.gradle-language",
+    "vscjava.vscode-java-pack",
+    "vscjava.vscode-java-test",
+    "redhat.java",
+    "gabrielbb.vscode-lombok",
+    "vscjava.vscode-maven",
+    "vscjava.vscode-java-dependency",
+    "vscjava.vscode-spring-boot-dashboard",
+    "pivotal.vscode-spring-boot",
+    "vscjava.vscode-spring-initializr",
+    "visualstudioexptteam.vscodeintellicode",
+  ]
+}

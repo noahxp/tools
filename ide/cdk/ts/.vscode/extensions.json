@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "amazonwebservices.aws-toolkit-vscode",
+    "dbaeumer.vscode-eslint",
+    "kisstkondoros.vscode-codemetrics",
+  ]
+}
