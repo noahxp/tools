@@ -91,6 +91,11 @@ $ python demo.py
   # 限制 CPU,Memory 的使用
   $ docker run -it --cpus=0.5 --memory=300m --memory-swap=0m -p 8080:80 -d nginx:latest
 
+  # 查看 docker container
+  $ docker ps
+  $ docker ps -a
+  # -a 為顯示已停掉的 container
+
   # 查看 docker container 使用 cpu/memory/network/disk-io等用量
   $ docker stats
 
@@ -102,4 +107,15 @@ $ python demo.py
 
   # 追蹤 container log
   $ docker logs -f CONTAINER_ID
+
+  # 刪除已停止的 container
+  $ docker rm $(docker ps -f="status=exited" -f="status=created" -q)
+
+  # 刪除被標為 <none> 的 images
+  $ docker rmi $(docker images -f "dangling=true" -q)
   ```
+
+### 進階應用
+
+- [Dockerfile multi-stage build](https://docs.docker.com/develop/develop-images/multistage-build/)
+- [docker compose](https://docs.docker.com/compose/)
