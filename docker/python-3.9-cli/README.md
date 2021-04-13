@@ -119,3 +119,10 @@ $ python demo.py
 
 - [Dockerfile multi-stage build](https://docs.docker.com/develop/develop-images/multistage-build/)
 - [docker compose](https://docs.docker.com/compose/)
+
+### multi-arch
+
+```bash
+$ docker buildx create --use --name build
+$ docker docker buildx build --push --platform linux/amd64,linux/arm64 --tag noahxp/python:3.9.2-cli .
+```
