@@ -126,3 +126,15 @@ $ python demo.py
 $ docker buildx create --use --name build
 $ docker docker buildx build --push --platform linux/amd64,linux/arm64 --tag noahxp/python:3.9.2-cli .
 ```
+
+### VS Code 搭配 Docker 開發環境
+
+參考文件: https://docs.microsoft.com/zh-tw/learn/modules/use-docker-container-dev-env-vs-code/
+
+- VS Code 安裝 Docker / Remote - Containers 二個 Extenstions
+- cmd+shift+p ，輸入「 >Remote-Containers: Add Development Container Configuration Files」
+- 依提示選擇語言，Python的話，選擇「Python 3 」，版本 「3.9」，「 install node.js 不要選 」
+  - vscode 將會自動新增「.devcontainer」資料夾及相關檔案
+  - .devcontainer 資料夾裡有 devcontainer.json 及 Dockerfile ，可以需求調整內容，例如需預裝的套件寫在 Dockerfile 裡
+- cmd+shift+p，輸入「reopen in container 」選取「Remote-Containers: Reopen in Container」，重開後即會進入 container 開發模式 (第一次啟動會比較久)
+  - 切回 local 開發模式，指令為「>Reopen Locally」或重啟 VS Code
