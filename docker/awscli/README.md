@@ -6,5 +6,5 @@
 
 ```bash
 $ docker buildx create --use --name build
-$ docker docker buildx build --push --tag noahxp/aws-cli --platform linux/amd64,linux/arm64 .
+$ docker buildx build --push --tag noahxp/aws-cli --platform linux/amd64,linux/arm64 .
 ```
